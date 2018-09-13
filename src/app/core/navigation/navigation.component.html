@@ -1,0 +1,11 @@
+<div class="navigation">
+    <ul class="list-group">
+        <li *ngFor="let page of pages"
+            class="list-group-item navigation__item"
+            [ngClass]="{ 'navigation__item-active': selected === page }"
+            (click)="setPage($event, page)"
+            routerLink="{{ page.route }}">
+            {{ page.name }}
+        </li>
+    </ul>
+</div>

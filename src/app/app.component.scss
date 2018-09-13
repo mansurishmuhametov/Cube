@@ -1,0 +1,9 @@
+.app {
+    border: solid 2px blue;
+    background-color: rgb(217, 217, 255);
+    position: relative;
+
+    &_no-padding {
+        padding: 0;
+    }
+}
