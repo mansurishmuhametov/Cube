@@ -1,10 +1,13 @@
+$colorGrey: grey;
+
 .navigation {
-    border: solid 2px grey;
     height: 100%;
     width: 100%;
-    color: black;
 
     &__item {
+        border-bottom: solid 1px $colorGrey;
+        padding: 15px;
+
         &:hover {
             cursor: pointer;
             background-color: #f0f0f0;

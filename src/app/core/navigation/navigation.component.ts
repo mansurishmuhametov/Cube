@@ -14,23 +14,18 @@ export class NavigationComponent implements OnInit {
     ngOnInit() {
         this.pages = [
             {
-                value: 'priceList',
                 name: 'Прайс лист',
                 route: 'price.list'
             },
             {
-                value: 'photos',
                 name: 'Фотографии',
                 route: 'photos'
             },
             {
-                value: 'contacts',
                 name: 'Котакты',
                 route: 'contacts'
             }
         ];
-
-        this.selected = this.pages[0];
     }
 
     public setPage(event, item) {
