@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { PriceModule } from './modules/price/price.module';
@@ -19,6 +20,7 @@ import { HomeNavigationComponent } from './core/home-navigation/home-navigation.
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     PriceModule,
     HomeModule
