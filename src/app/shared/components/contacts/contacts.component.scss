@@ -1,0 +1,14 @@
+$colorGrey: #ccc;
+
+.contacts {
+    &__item {
+        border: solid 2px yellow;
+    }
+    &__icon {
+        color: $colorGrey;
+        border: solid 1px red;
+    }
+    &__value {
+        border: solid 1px blue;
+    }
+}

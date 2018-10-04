@@ -1,22 +1,22 @@
 <div class="app">
-  <div class="row">
-    <div class="col-md-4 app_no-padding app__block app__home">
-      <app-home-navigation></app-home-navigation>
+    <div class="row">
+        <div class="col-md-4 app_no-padding app__block app__home">
+        <app-home-navigation></app-home-navigation>
+        </div>
+        <div class="col-md-4 app_no-padding app__block">
+        <span>title</span>
+        </div>
+        <div class="col-md-4 app_no-padding app__block">
+        <app-contacts></app-contacts>
+        </div>
     </div>
-    <div class="col-md-5 app_no-padding app__block">
-      <span>title</span>
+    <div class="row">
+        <div class="col-md-4 app_no-padding app__block">
+        <app-navigation></app-navigation>
+        </div>
+        <div class="col-md-8 app_no-padding app__block">
+        <router-outlet></router-outlet>
+        </div>
     </div>
-    <div class="col-md-3 app_no-padding app__block">
-      <span>contacts</span>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 app_no-padding app__block">
-      <app-navigation></app-navigation>
-    </div>
-    <div class="col-md-8 app_no-padding app__block">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-  <app-footer></app-footer>
+    <app-footer></app-footer>
 </div>

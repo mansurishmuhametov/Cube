@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { MatIconModule } from '@angular/material';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -10,22 +11,29 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { HomeNavigationComponent } from './core/home-navigation/home-navigation.component';
+import { ContactsComponent } from './shared/components/contacts/contacts.component';
+
+import { AutoCenterService } from './http/auto-center/auto-center.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FooterComponent,
-    NavigationComponent,
-    HomeNavigationComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule,
-    PriceModule,
-    HomeModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        FooterComponent,
+        NavigationComponent,
+        HomeNavigationComponent,
+        ContactsComponent
+    ],
+    imports: [
+        BrowserModule,
+        MatIconModule,
+        HttpClientModule,
+        AppRoutingModule,
+        PriceModule,
+        HomeModule
+    ],
+    providers: [
+        AutoCenterService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
