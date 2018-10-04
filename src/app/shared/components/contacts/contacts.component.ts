@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { AutoCenterService } from '../../../http/auto-center/auto-center.service';
 import { IAutoCenter } from '../../../http/auto-center/auto-center';
 import { IContacts } from './contacts';
+import * as moment from 'moment';
 
 @Component({
     selector: 'app-contacts',
@@ -22,7 +23,10 @@ export class ContactsComponent implements OnInit {
     }
 
     prepare(center: IAutoCenter): IContacts {
-        const workTime = 'workTime';
+        const from = moment(center.from, 'HH:mm:sss[Z]');
+        const to = moment(center.to, 'HH:mm:sss[Z]');
+
+        const workTime = this.getWorkTime(from, to);
 
         const contacts = {
             phone: center.phone,
@@ -31,5 +35,9 @@ export class ContactsComponent implements OnInit {
         };
 
         return contacts;
+    }
+
+    getWorkTime(from: moment.Moment, to: moment.Moment) {
+        return `Пн-Пт: ${from.format('HH:mm')} - ${to.format('HH:mm')}`;
     }
 }
