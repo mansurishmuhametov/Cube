@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { PriceModule } from './modules/price/price.module';
 import { HomeModule } from './modules/home/home.module';
+import { ContactsModule } from './modules/contacts/contacts.module';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
@@ -29,7 +30,8 @@ import { AutoCenterService } from './http/auto-center/auto-center.service';
         HttpClientModule,
         AppRoutingModule,
         PriceModule,
-        HomeModule
+        HomeModule,
+        ContactsModule
     ],
     providers: [
         AutoCenterService

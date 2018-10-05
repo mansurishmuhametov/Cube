@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
             },
             {
                 name: 'Котакты',
-                route: 'contacts'
+                route: 'contacts.list'
             }
         ];
     }

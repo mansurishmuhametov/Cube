@@ -3,8 +3,8 @@ import { PriceRoutingModule } from './price-routing.module';
 import { PriceListComponent } from './components/price-list/price-list.component';
 
 @NgModule({
-    declarations: [PriceListComponent],
     imports: [PriceRoutingModule],
-    exports: [PriceListComponent]
+    declarations: [PriceListComponent],
+    exports: []
 })
-export class PriceModule {}
+export class PriceModule { }

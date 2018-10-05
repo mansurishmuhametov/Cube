@@ -9,7 +9,7 @@ import { HomeService } from '../../http/home/home.service';
 @NgModule({
     declarations: [HomeComponent],
     imports: [HomeRoutingModule, CommonModule],
-    exports: [HomeComponent],
+    exports: [],
     providers: [HomeService]
 })
 export class HomeModule { }
