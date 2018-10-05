@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { AutoCenterService } from '../../../http/auto-center/auto-center.service';
 import { IAutoCenter } from '../../../http/auto-center/auto-center';
-import { IContacts } from './contacts';
+import { IContactsInfo } from './contacts-info';
 import * as moment from 'moment';
 
 @Component({
-    selector: 'app-contacts',
-    templateUrl: './contacts.component.html',
-    styleUrls: ['./contacts.component.scss']
+    selector: 'app-contacts-info',
+    templateUrl: './contacts-info.component.html',
+    styleUrls: ['./contacts-info.component.scss']
 })
-export class ContactsComponent implements OnInit {
+export class ContactsInfoComponent implements OnInit {
 
-    public contacts: IContacts;
+    public contacts: IContactsInfo;
 
     constructor(private _autoCenterService: AutoCenterService) { }
 
@@ -22,7 +22,7 @@ export class ContactsComponent implements OnInit {
             });
     }
 
-    prepare(center: IAutoCenter): IContacts {
+    prepare(center: IAutoCenter): IContactsInfo {
         const from = moment(center.from, 'HH:mm:sss[Z]');
         const to = moment(center.to, 'HH:mm:sss[Z]');
 

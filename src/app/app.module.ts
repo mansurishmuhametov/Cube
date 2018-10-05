@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { NavigationComponent } from './core/navigation/navigation.component';
 import { HomeNavigationComponent } from './core/home-navigation/home-navigation.component';
-import { ContactsComponent } from './shared/components/contacts/contacts.component';
+import { ContactsInfoComponent } from './shared/components/contacts-info/contacts-info.component';
 
 import { AutoCenterService } from './http/auto-center/auto-center.service';
 
@@ -21,7 +21,7 @@ import { AutoCenterService } from './http/auto-center/auto-center.service';
         FooterComponent,
         NavigationComponent,
         HomeNavigationComponent,
-        ContactsComponent
+        ContactsInfoComponent
     ],
     imports: [
         BrowserModule,

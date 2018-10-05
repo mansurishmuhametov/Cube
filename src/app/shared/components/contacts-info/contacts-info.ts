@@ -1,4 +1,4 @@
-export interface IContacts {
+export interface IContactsInfo {
     phone: string;
     location: string;
     workTime: string;
