@@ -28,10 +28,13 @@ import { AutoCenterService } from './http/auto-center/auto-center.service';
         BrowserModule,
         MatIconModule,
         HttpClientModule,
-        AppRoutingModule,
         PriceModule,
         HomeModule,
-        ContactsModule
+        ContactsModule,
+        // порядок важен для роутингов
+        // поэтому роут, который используется по-умолчанию
+        // должен быть в конце
+        AppRoutingModule
     ],
     providers: [
         AutoCenterService

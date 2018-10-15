@@ -15,7 +15,7 @@ export class NavigationComponent implements OnInit {
         this.pages = [
             {
                 name: 'Прайс лист',
-                route: 'price.list'
+                route: 'price'
             },
             {
                 name: 'Фотографии',
@@ -23,7 +23,7 @@ export class NavigationComponent implements OnInit {
             },
             {
                 name: 'Котакты',
-                route: 'contacts.list'
+                route: 'contacts'
             }
         ];
     }

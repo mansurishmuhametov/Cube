@@ -5,9 +5,6 @@ import { PriceListComponent } from './components/price-list/price-list.component
 
 const routes: Routes = [{
     path: 'price',
-    redirectTo: '/price.list'
-}, {
-    path: 'price.list',
     component: PriceListComponent
 }];
 
